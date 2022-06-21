@@ -31,9 +31,9 @@
 
 */
 
-//Potential Solution #1
+//Potential Solution A
 
-function twoNumSum(array, targetSum) {
+function twoNumSumA(array, targetSum) {
   for (let i = 0; i < array.length - 1; i++) {
     firstNum = array[i];
     for (let j = i + 1; j < array.length - 1; j++) {
@@ -49,3 +49,20 @@ function twoNumSum(array, targetSum) {
 //Time & Space Complexity: Time = O(n^2) & Space = O(1)
 
 
+
+//Potential Solution B
+
+function twoNumSumB(array, targetSum) {
+  const nums = {};
+  for (const num of array) {
+    const potentialMatch = targetSum - num;
+    if (potentialMatch in nums) {
+      return [potentialMatch, num];
+    } else {
+      nums[num] = true;
+    }
+  }
+  return [];
+}
+
+//Time & Space Complexity: Time = O(n) & Space = O(n)
