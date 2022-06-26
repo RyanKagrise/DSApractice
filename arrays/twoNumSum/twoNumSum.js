@@ -33,18 +33,19 @@
 
 //Potential Solution A
 
-function twoNumSumA(array, targetSum) {
+function twoNumberSum(array, targetSum) {
   for (let i = 0; i < array.length - 1; i++) {
-    firstNum = array[i];
-    for (let j = i + 1; j < array.length - 1; j++) {
-      secondNum = array[j];
-      if (firstNum + secondNum === targetSum) {
-        return [firstNum, secondNum]
+    const firstNumber = array[i];
+    for (let j = i + 1; j < array.length; j++) {
+      const secondNumber = array[j];
+      if (firstNumber + secondNumber === targetSum) {
+        return [firstNumber, secondNumber]
       }
     }
   }
   return [];
 }
+
 
 //Time & Space Complexity: Time = O(n^2) & Space = O(1)
 
