@@ -40,3 +40,9 @@ def two_number_sum(array, target_sum):
             nums[num] = True
     return []
 
+# time and space = O(n) time and O(n) space
+
+
+#Potential Solution C
+
+
