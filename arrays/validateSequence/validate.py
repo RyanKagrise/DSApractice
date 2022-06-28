@@ -23,3 +23,17 @@ def valid_sequence(array, sequence) {
 # alternative solution
 
 
+def valid_sequence_b(array, sequence):
+  sequenceIndex = 0
+  for value in array:
+    if sequenceIndex == len(sequence):
+        break
+    if sequence[sequenceIndex] == value:
+        sequenceIndex += 1
+  return sequenceIndex == len(sequence)
+
+
+# time and space = O(n) time and O(1) space
+
+
+
