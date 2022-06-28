@@ -15,3 +15,19 @@ function validSequence (array, sequence) {
 }
 
 // Time & Space = O(n) time | O(1) space
+
+
+//alternative solutions
+
+
+function isValidSequence(array, sequence) {
+  let sequenceIndex = 0;
+  for (const value of array) {
+    if (sequenceIndex === sequence.length) break;
+    if (sequence[sequenceIndex] === value) sequenceIndex++;
+  }
+  return sequenceIndex === sequence.length;
+}
+
+
+//time and space = O(n) time and O(1) space
