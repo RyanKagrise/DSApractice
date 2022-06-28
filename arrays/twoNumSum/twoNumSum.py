@@ -30,7 +30,7 @@ def two_number_sum_a(array, target_sum):
 
 ##Potential Solution B
 
-def two_number_sum(array, target_sum):
+def two_number_sum_b(array, target_sum):
     nums = {}
     for num in array:
         potential_match = target_sum - num
@@ -44,5 +44,20 @@ def two_number_sum(array, target_sum):
 
 
 #Potential Solution C
+
+
+def two_number_sum_c(array, target_sum):
+    array.sort()
+    left = 0
+    right = len(array) - 1
+    while left < right:
+        current_sum = array[left] + array[right]
+        if current_sum == target_sum:
+            return [array[left], array[right]]
+        elif current_sum < target_sum:
+            left += 1
+        elif current_sum > target_sum:
+            right -= 1
+    return []
 
 
