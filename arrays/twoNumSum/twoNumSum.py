@@ -26,3 +26,17 @@ def two_number_sum_a(array, target_sum):
     return []
 
 ## Time & Space Complexity: Time = O(n^2) & Space = O(1)
+
+
+##Potential Solution B
+
+def two_number_sum(array, target_sum):
+    nums = {}
+    for num in array:
+        potential_match = target_sum - num
+        if potential_match in nums:
+            return [potential_match, num]
+        else:
+            nums[num] = True
+    return []
+
