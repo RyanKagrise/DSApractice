@@ -24,3 +24,6 @@ function updateScores(team, points, scores) {
 
   scores[team] += points;
 }
+
+
+//Time and space: O(n) [cometitions] time and O(n) [teams] space
