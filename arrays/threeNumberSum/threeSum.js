@@ -20,3 +20,4 @@ function threeNumberSum(array, targetSum) {
   return triplets;
 }
 
+//time and space: o(n^2) time and o(n) space
