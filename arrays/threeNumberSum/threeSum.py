@@ -15,3 +15,5 @@ def three_num_sum(array, target_sum):
       elif current_sum > target_sum:
         right -= 1
   return triplets
+
+## space/time: o(n) space and o(n^2) time
