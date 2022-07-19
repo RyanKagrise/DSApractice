@@ -10,4 +10,8 @@ def three_num_sum(array, target_sum):
         triplets.append([array[i], array[left], array[right]])
         left += 1
         right -= 1
-        
+      elif current_sum < target_sum:
+        left += 1
+      elif current_sum > target_sum:
+        right -= 1
+  return triplets
