@@ -4,4 +4,10 @@ def three_num_sum(array, target_sum):
   for i in range(len(array) - 2):
     left = i + 1
     right = len(array) - 1
-    
+    while left < right:
+      current_sum = array[i] + array[left] + array[right]
+      if current_sum = target_sum:
+        triplets.append([array[i], array[left], array[right]])
+        left += 1
+        right -= 1
+        
