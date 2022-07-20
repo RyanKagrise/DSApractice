@@ -12,7 +12,7 @@ function threeNumberSum(array, targetSum) {
         right--;
       } else if (currentSum <  targetSum) {
         left++;
-      } else if (currentSum < targetSum) {
+      } else if (currentSum > targetSum) {
         right --;
       }
     }
