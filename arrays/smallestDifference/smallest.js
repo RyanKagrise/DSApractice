@@ -7,6 +7,16 @@ function smallestDifference(arrayOne, arrayTwo) {
   let current = Infinity;
   let smallestPair = [];
   while (indexOne < arrayOne.length && indexTwo < arrayTwo.length) {
-    
+    let firstNum = arrayOne[indexOne];
+    let secondNum = arrayTwo[indexTwo];
+    if (firstNum < secondNum) {
+      current = secondNum - firstNum;
+      indexOne++;
+    } else if (secondNum < firstNum) {
+      current = firstNum - secondNum;
+      indexTwo++;
+    } else {
+      return [firstNum, secondNum]
+    }
   }
 }
