@@ -25,3 +25,6 @@ function smallestDifference(arrayOne, arrayTwo) {
   }
   return smallestPair;
 }
+
+
+//time and space = o(nlog(n) + mlog(m)) time and o(n) space
