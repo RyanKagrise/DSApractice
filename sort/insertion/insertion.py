@@ -8,3 +8,7 @@ def insertion_sort(array):
 
 def swap (i, j, array):
   array[i], array[j] = array[j], array[i]
+
+
+
+## time and space: o(n^2) time and o(1) space
