@@ -16,3 +16,6 @@ function swap(i, j, array) {
   array[j] = array[i];
   array[i] = temp;
 }
+
+
+//time and space = o(n^2) time and o(1) space
