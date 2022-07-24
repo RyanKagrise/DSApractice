@@ -6,3 +6,5 @@ def two_num(array, target_sum):
       if first_num + second_num == target_sum:
         return [first_num, second_num]
   return []
+
+##time and space: o(n^2) time and o(1) space
