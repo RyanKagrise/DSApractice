@@ -11,4 +11,4 @@ function twoNumberSum(array, targetSum) {
   return []
 }
 
-
+// time and space = o(n^2) time and o(1) space
