@@ -24,3 +24,18 @@ function isValidSequence(array, sequence) {
 }
 
 //time and space= o(n) time and o(1) space
+
+function twoNumSum(array, targetSum) {
+  for (let i = 0; i < array.length - 1; i++) {
+    let firstNum = array[i];
+    for (let j = i + 1; j < array.length; j++) {
+      let secondNum = array[j];
+      if (firstNum + secondNum === targetSum) {
+        return [firstNum, secondNum]
+      }
+    }
+  }
+  return []
+}
+
+
