@@ -22,3 +22,5 @@ function isValidSequence(array, sequence) {
   }
   return sequenceIndex === sequence.length;
 }
+
+//time and space= o(n) time and o(1) space
