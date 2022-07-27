@@ -114,3 +114,20 @@ function twoNumAgain (array, targetSum) {
 
 
 //time and space = o(nlog(n)) time and o(1) space;
+
+function twoNumAgain (array, targetSum) {
+  array.sort((a, b) => a - b);
+  let left = 0;
+  let right = array.length - 1;
+  while (left < right) {
+    const currentSum = array[left] + array[right];
+    if (currentSum === targetSum) {
+      return [array[left], array[right]];
+    } else if (currentSum < targetSum) {
+      left++;
+    } else if (currentSum > targetSum) {
+      right--;
+    }
+  }
+  return [];
+}
