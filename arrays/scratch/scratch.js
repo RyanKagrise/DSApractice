@@ -154,3 +154,18 @@ function twoSum(array, targetSum) {
 
 
 //time and space = o(nlog(n)) time and o(1) space
+
+
+
+function validation(array, sequence) {
+  let arrayIndex = 0;
+  let sequenceIndex = 0;
+  while (arrayIndex < array.length && sequenceIndex < sequence.length) {
+    if (array[arrayIndex] === sequence[sequenceIndex]) sequenceIndex++;
+    arrayIndex++;
+  }
+  return sequenceIndex === sequence.length;
+}
+
+
+//time and space = 
