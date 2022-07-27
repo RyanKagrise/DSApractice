@@ -168,4 +168,4 @@ function validation(array, sequence) {
 }
 
 
-//time and space = 
+//time and space = o(n) time and o(1) space
