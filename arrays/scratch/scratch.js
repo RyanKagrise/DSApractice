@@ -184,4 +184,4 @@ function sortedSquare(array) {
 }
 
 
-//time and space = 
+//time and space = o(n) time and o(n) space
