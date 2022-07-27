@@ -153,4 +153,4 @@ function twoSum(array, targetSum) {
 }
 
 
-//time and space
+//time and space = o(nlog(n)) time and o(1) space
