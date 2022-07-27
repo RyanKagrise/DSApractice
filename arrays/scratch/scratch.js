@@ -131,3 +131,5 @@ function twoNumAgain (array, targetSum) {
   }
   return [];
 }
+
+//time and space = o(nlog(n)) time and o(1) space;
