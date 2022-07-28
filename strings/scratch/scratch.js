@@ -27,3 +27,5 @@ function getNewLetter(letter, key, alphabet) {
   const newLetterCode = alphabet.indexOf(letter) + key;
   return alphabet[newLetterCode % 26];
 }
+
+//time and space = o(n) time and o(n) space
