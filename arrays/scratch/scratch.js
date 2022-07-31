@@ -13,6 +13,11 @@ function twoNumberSum(array, targetSum) {
 
 // time and space = o(n^2) time and o(1) space;
 
+
+
+//--------------------------------------------------------------
+
+
 function isValidSequence(array, sequence) {
   let arrayIndex = 0;
   let sequenceIndex = 0;
@@ -24,6 +29,13 @@ function isValidSequence(array, sequence) {
 }
 
 //time and space= o(n) time and o(1) space;
+
+
+
+//--------------------------------------------------------------
+
+
+
 
 function twoNumSum(array, targetSum) {
   for (let i = 0; i < array.length - 1; i++) {
@@ -42,6 +54,12 @@ function twoNumSum(array, targetSum) {
 //time and space = o(n^2) time and o(1) space;
 
 
+
+
+//--------------------------------------------------------------
+
+
+
 function twoNumAgain(array, targetSum) {
   for (let i = 0; i < array.length - 1; i++) {
     let firstNum = array[i];
@@ -59,6 +77,11 @@ function twoNumAgain(array, targetSum) {
 //time and space = o(n^2) time and o(1) space;
 
 
+
+
+//--------------------------------------------------------------
+
+
 function twoNumAgain(array, targetSum) {
   array.sort((a, b) => a - b);
   let left = 0;
@@ -76,8 +99,15 @@ function twoNumAgain(array, targetSum) {
   return [];
 }
 
-
 //time and space = o(nlog(n)) time and o(1) space;
+
+
+
+//--------------------------------------------------------------
+
+
+
+
 function twoNumAgain(array, targetSum) {
   for (let i = 0; i < array.length - 1; i++) {
     let firstNum = array[i];
@@ -95,6 +125,10 @@ function twoNumAgain(array, targetSum) {
 //time and space = o(n^2) time and o(1) space;
 
 
+
+//--------------------------------------------------------------
+
+
 function twoNumAgain(array, targetSum) {
   array.sort((a, b) => a - b);
   let left = 0;
@@ -115,6 +149,12 @@ function twoNumAgain(array, targetSum) {
 
 //time and space = o(nlog(n)) time and o(1) space;
 
+
+
+//--------------------------------------------------------------
+
+
+
 function twoNumAgain(array, targetSum) {
   array.sort((a, b) => a - b);
   let left = 0;
@@ -133,6 +173,10 @@ function twoNumAgain(array, targetSum) {
 }
 
 //time and space = o(nlog(n)) time and o(1) space;
+
+
+
+//--------------------------------------------------------------
 
 
 function twoSum(array, targetSum) {
@@ -157,6 +201,9 @@ function twoSum(array, targetSum) {
 
 
 
+//--------------------------------------------------------------
+
+
 function validation(array, sequence) {
   let arrayIndex = 0;
   let sequenceIndex = 0;
@@ -170,6 +217,9 @@ function validation(array, sequence) {
 
 //time and space = o(n) time and o(1) space
 
+
+
+//--------------------------------------------------------------
 
 
 function sortedSquare(array) {
