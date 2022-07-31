@@ -8,6 +8,3 @@ function isMonotonic(array) {
   }
   return isNonDecreasing || isNonIncreasing;
 }
-
-// Do not edit the line below.
-exports.isMonotonic = isMonotonic;
