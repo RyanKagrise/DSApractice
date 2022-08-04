@@ -347,4 +347,4 @@ function alternativeDaily(array, targetSum) {
   return [];
 }
 
-
+// time and space = o(n) time and o(n) space
