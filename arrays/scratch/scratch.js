@@ -328,4 +328,23 @@ function dailyRep(array, targetSum) {
 }
 
 
-//time and space = o(n) time and o(1) space
+//time and space = o(nlogn) time and o(1) space
+
+
+//-----------------------------------------------------------
+
+
+function alternativeDaily(array, targetSum) {
+  const nums = {};
+  for (const num of array) {
+    const potentialMatch = targetSum - num;
+    if (potentialMatch in nums) {
+      return [potentialMatch, num];
+    } else {
+      nums[num] = true;
+    }
+  }
+  return [];
+}
+
+
