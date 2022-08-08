@@ -368,3 +368,18 @@ function alternativeDailyRepeater(array, targetSum) {
 }
 
 // time and space = o(n) time and o(n) space
+
+//------------------------------------------
+
+function sortedSquared (array) {
+  const sortedSquares = new Array(array.length).fill(0);
+
+  for (let i = 0; i < array.length; i++) {
+    const value = array[i];
+    sortedSquares[i] = value * value;
+  }
+
+  sortedSquares.sort((a, b) => a - b);
+  return sortedSquares;
+
+}
