@@ -24,3 +24,6 @@ function getStreak(array, i) {
   }
   return rightPointer - leftPointer + 1;
 }
+
+
+//time and space = o(n) time and o(1) space 
