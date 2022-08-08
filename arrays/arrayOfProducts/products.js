@@ -12,3 +12,5 @@ function productsArray(array) {
   }
   return products;
 }
+
+//time and space = o(n^2) time and o(n) space
