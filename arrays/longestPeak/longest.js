@@ -13,3 +13,14 @@ function longestPeak(array) {
   return longestStreak
 }
 
+function getStreak(array, i) {
+  let leftPointer = i;
+  let rightPointer = i;
+  while ( array[leftPointer - 1] < array[leftPointer]) {
+    leftPointer--;
+  }
+  while (array[rightPointer + 1] < array[rightPointer]) {
+    rightPointer++;
+  }
+  return rightPointer - leftPointer + 1;
+}
