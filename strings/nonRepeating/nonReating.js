@@ -6,7 +6,7 @@ function firstNonRepeatingCharacter(string) {
     characterFrequency[character]++;
   }
 
-  for (let i = 0; i < string.lenght; i++) {
+  for (let i = 0; i < string.length; i++) {
     const character = string[i];
     if (characterFrequency[character] === 1) return i;
   }
