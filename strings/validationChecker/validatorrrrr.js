@@ -15,3 +15,5 @@ function generateDocument(characters, document) {
 
   return true;
 }
+
+// o(n + m) time and o(n) space
