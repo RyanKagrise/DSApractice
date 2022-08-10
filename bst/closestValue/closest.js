@@ -24,3 +24,6 @@ class BST {
     this.right = null;
   }
 }
+
+
+// o(log(n)) time and o(log(n)) space
