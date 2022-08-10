@@ -108,6 +108,33 @@ function getNewLetter(letter, key, alphabet) {
 
 //----------------------------------------------------------
 
+
+function lengthEncoded(string) {
+  const resultsArray = [];
+  let currentRunLength = 1;
+
+  for (let i = 1; i < string.length; i++) {
+    let currentCharacter = string[i];
+    let previousCharacter = string[i - 1];
+
+    if (currentCharacter !== previousCharacter || currentRunLength === 9) {
+      resultsArray.push(currentRunLength.toString());
+      resultsArray.push(previousCharacter);
+      currentRunLength = 0;
+    }
+    currentRunLength++;
+  }
+
+  resultsArray.push(currentRunLength.toString());
+  resultsArray.push(string[string.length - 1]);
+
+  return resultsArray.join('');
+}
+
+
+
+
+
 //--------------------------------------------------------------
 
 //--------------------------------------------------------------
