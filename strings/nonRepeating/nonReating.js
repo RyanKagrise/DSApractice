@@ -14,3 +14,6 @@ function firstNonRepeatingCharacter(string) {
   return -1;
 
 }
+
+
+// o(n) time and o(1) space;
