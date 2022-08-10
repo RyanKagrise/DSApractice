@@ -406,3 +406,8 @@ function productsArrayScratcher(array) {
 
 
 //time and space = o(n^2) time and o(n) space
+
+
+//-------------------------------------------
+
+
