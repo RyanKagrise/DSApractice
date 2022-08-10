@@ -1,14 +1,17 @@
 function generateDocument(characters, document) {
-  const sortedChars = characters.split('').sort();
-  const sortedDoc = characters.split('').sort();
+  const characterCounts = {};
 
-  let j = 0;
-  let i = 0;
-  while (j < sortedChars.length && i < sortedDoc.length) {
-    if (sortedChars[j] > sortedDoc[i]) return false;
-    else if (sortedChars[j] === sortedDoc[i]) i++;
-    j++;
+  for (const character of characters) {
+    if (!(character in characterCounts)) characterCounts[character] = 0;
+
+    characterCounts[character]++;
   }
 
-  return i === sortedDoc.length;
+  for (const character of document) {
+    if (!(character in characterCounts) || characterCounts[character] === 0) return false;
+
+    characterCounts[character]--;
+  }
+
+  return true;
 }
