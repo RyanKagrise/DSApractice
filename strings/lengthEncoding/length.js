@@ -6,7 +6,7 @@ function lengthEncoding(string) {
     const currentCharacter = string[i];
     const previousCharacter = string[i - 1];
 
-    if (currentCharacter !== previousCharacter || currentRunLength === 9) {
+    if (currentCharacter !== previousCharacter || currentLength === 9) {
       encodedStringCharacters.push(currentLength.toString());
       encodedStringCharacters.push(previousCharacter);
       currentLength = 0;
@@ -20,3 +20,6 @@ function lengthEncoding(string) {
 
   return encodedStringCharacters.join('');
 }
+
+
+// o(n) time and o(n) space
