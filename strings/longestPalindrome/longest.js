@@ -18,3 +18,6 @@ function getLongestPalindromeFrom(string, leftIndex, rightIndex) {
   }
   return [leftIndex + 1, rightIndex];
 }
+
+
+// o(n^2) time and o(n) space
