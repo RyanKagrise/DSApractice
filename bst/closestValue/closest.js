@@ -12,5 +12,15 @@ function dfs (tree, target, diff) {
 }
 
 function findClosestValueInBst(tree, target) {
-  const 
+  const diff = { value: Infinity, closest: null }
+  dfs(tree, target, diff);
+  return diff.closest;
+}
+
+class BST {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
 }
