@@ -131,7 +131,7 @@ function lengthEncoded(string) {
   return resultsArray.join('');
 }
 
-
+// o(n) time and space!
 
 
 
