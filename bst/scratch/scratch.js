@@ -17,3 +17,13 @@ function findClosestValueInBst(tree, target) {
   return diff.closest;
 }
 
+class BST {
+  constructor(value) {
+    this.value = value;
+    this.left = null;
+    this.right = null;
+  }
+}
+
+
+// o(log(n)) time and o(log(n)) space
