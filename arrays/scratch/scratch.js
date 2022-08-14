@@ -422,3 +422,18 @@ function validation(array, sequence) {
 }
 
 
+
+//----------------------------------------------
+
+
+function sortedSquare(array) {
+  let squaredArray = [];
+  for (let i = 0; i < array.length; i++) {
+    let number = array[i];
+    let squaredNumber = number * number;
+    squaredArray.push(squaredNumber);
+  }
+  squaredArray.sort((a, b) => a - b);
+  return squaredArray;
+}
+
