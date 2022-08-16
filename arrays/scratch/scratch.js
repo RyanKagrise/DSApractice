@@ -456,3 +456,7 @@ function dailyPractice(array, targetSum) {
   }
   return [];
 }
+
+
+
+//time and space = o(nlogn) time and o(1) space
