@@ -521,3 +521,5 @@ function longTime(array, targetSum) {
   }
   return [];
 }
+
+//time and space:
