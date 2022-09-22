@@ -137,8 +137,17 @@ function lengthEncoded(string) {
 
 //--------------------------------------------------------------
 
-function stringPractice(array) {
-  
+function stringPractice(words) {
+  const anagrams = {};
+  for (const word of words) {
+    const sortedWord = word.split('').sort().join('');
+    if (sortedWord in anagrams) {
+      anagrams[sortedWord].push(word);
+    } else {
+      anagrams[sortedWord] = [word];
+    }
+  }
+  return Object.values(anagrams);
 }
 
 
