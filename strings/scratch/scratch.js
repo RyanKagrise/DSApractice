@@ -150,7 +150,9 @@ function stringPractice(words) {
   return Object.values(anagrams);
 }
 
-//time and space:
+//time and space: o(w*n*log(n)) time and o(wn) space
+
+
 //--------------------------------------------------------------
 
 
