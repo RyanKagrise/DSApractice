@@ -26,7 +26,10 @@ function validIpAddress(string) {
 
 
 function isValidPart(string) {
+  const stringAsInteger = parseInt(string);
+  if (stringAsInt > 255) return false;
 
+  return string.length === stringAsInteger.toString().length;
 }
 
 
