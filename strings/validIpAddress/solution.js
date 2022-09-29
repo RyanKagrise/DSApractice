@@ -33,4 +33,4 @@ function isValidPart(string) {
 }
 
 
-//time and space:
+//time and space: o(1) time and o(1) space
