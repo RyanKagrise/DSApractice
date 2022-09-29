@@ -32,4 +32,4 @@ def is_valid_part(string):
     return len(string) == len(str(string_as_int))
 
 
-##time and space:
+##time and space: o(1) time o(1) space
