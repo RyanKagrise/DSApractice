@@ -25,3 +25,9 @@ function validIpAddress(string) {
 }
 
 
+function isValidPart(string) {
+
+}
+
+
+//time and space:
