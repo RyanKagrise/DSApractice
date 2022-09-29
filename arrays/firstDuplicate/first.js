@@ -6,3 +6,6 @@ function firstDuplicateValue(array) {
   }
   return -1;
 }
+
+
+//time and space: o(n) time and o(n) space
